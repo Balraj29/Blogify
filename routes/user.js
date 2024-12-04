@@ -1,6 +1,6 @@
 const {Router } = require("express")
 const User = require("../models/user")
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const route = Router();
 const {createTokenForUser, validateToken } =require("../services/authentication")
 
