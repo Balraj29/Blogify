@@ -21,10 +21,7 @@ app.use(cookieparser());
 app.use(checkforauthenticationcookie("token"))
 
 
-module.exports = (req, res) => {
-    res.end("Hello from Node.js on Vercel!");
-  };
-  
+
 app.get("/",async (req,res)=>{
     const allblogs = await Blog.find({});
     res.render("home",{
@@ -40,4 +37,4 @@ app.use("/blog",blogroutes);
     console.log(`Server Started on PORT ${PORT}`)
 })
 
-// module.exports = app;
+ //module.exports = app;
