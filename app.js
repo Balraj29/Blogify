@@ -33,8 +33,8 @@ app.get("/",async (req,res)=>{
 app.use("/user",UserRoutes);
 app.use("/blog",blogroutes);
 
- app.listen(PORT,()=>{
-    console.log(`Server Started on PORT ${PORT}`)
-})
+//  app.listen(PORT,()=>{
+//     console.log(`Server Started on PORT ${PORT}`)
+// })
 
- //module.exports = app;
+module.exports = app;
